@@ -36,18 +36,19 @@ a {
 }
 
 .menu-overlay li{
-  padding: 0.5rem;
+  padding: 0.8rem;
   list-style: none;
 }
 
 .menu-overlay {
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 2rem 1.5rem;
   position: fixed;
   z-index: 5;
   background-color: white;
   width: 80vw;
   font-size: 1rem;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 

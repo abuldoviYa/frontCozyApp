@@ -72,7 +72,7 @@ nav{
 }
 
 
-@media screen and (min-width: 1190px) {
+@media screen and (min-width: 1200px) {
   .nav-links-small-wrapper {
     display: none;
   }
@@ -81,5 +81,15 @@ nav{
     display: block;
   }
 
+  nav a {
+    font-size: 0.9rem;
+  }
+
 }
 
+
+@media screen and (min-width: 1350px) {
+  nav a {
+    font-size: 1.1rem;
+  }
+}

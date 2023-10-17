@@ -35,6 +35,7 @@ import {MatButtonModule} from "@angular/material/button";
     SiteContentComponent,
     ProductPriceComponent,
 
+
   ],
   imports: [
     BrowserModule,

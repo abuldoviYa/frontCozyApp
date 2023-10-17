@@ -69,7 +69,7 @@
               </div>
 
 
-              <div *ngIf="color.title == 'none'" class="colorContainer border-container" (click)="onFullColors()">
+              <div *ngIf="color.title == 'none'" class="colorContainer border-container" (click)="onFullColors()" [style.background-image]="'url(/assets/colors/blankwhite.png)'">
                 <span>+{{color.number}}</span>
               </div>
             </div>
