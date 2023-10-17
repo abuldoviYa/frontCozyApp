@@ -1,0 +1,113 @@
+.logo {
+  //background: url("./assets/icon.png");
+}
+
+.header-middle {
+  height: 60px;
+  margin: 20px 0;
+}
+
+.input-group, .input-group-prepend, .input-group-text {
+  height: 100%;
+}
+
+.flex-grid {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.col-30 {
+  width: 30%;
+}
+.form{
+
+  position: relative;
+}
+
+.form .fa-search{
+
+  position: absolute;
+  top:20px;
+  left: 20px;
+  color: #292a2a;
+
+}
+.form span{
+
+  position: absolute;
+  right: 17px;
+  top: 13px;
+  padding: 2px;
+  border-left: 1px solid #d1d5db;
+
+}
+
+.left-pan{
+  padding-left: 7px;
+}
+
+.left-pan i{
+
+  padding-left: 10px;
+}
+
+.form-input{
+  font-size: 1.2rem;
+  height: 55px;
+  text-indent: 33px;
+  border-radius: 10px;
+}
+
+.form-input:focus{
+
+  box-shadow: none;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+}
+
+.contact .number {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 1.5rem;
+  line-height: 90%;
+}
+
+.contact .number-info {
+  font-size: 1.2rem;
+}
+
+.logo-img img{
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .contact .number {
+    font-size: 1.1rem;
+    line-height: 120%;
+  }
+  .contact .number-info {
+    font-size: 0.9rem;
+  }
+  .logo-img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact .number {
+    font-size: 1.4rem;
+  }
+  .contact .number-info {
+    font-size: 1.1rem;
+  }
+  .logo-img {
+    display: block;
+  }
+}
+
+
+

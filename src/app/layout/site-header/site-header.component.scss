@@ -1,0 +1,22 @@
+
+@media screen and (min-width: 350px) {
+  app-site-header-middle {
+    display: none;
+  }
+
+
+
+}
+
+
+@media screen and (min-width: 1190px) {
+  app-site-header-middle {
+    display: block;
+  }
+
+  app-site-header-low {
+    display: block;
+  }
+
+}
+

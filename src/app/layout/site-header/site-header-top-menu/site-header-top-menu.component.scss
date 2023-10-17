@@ -1,0 +1,73 @@
+.top-menu {
+  height: 60px;
+  background-color: var(--main-bg-grey);
+}
+.horizontal-menu {
+  color: wheat;
+  display: block;
+  height: 50px;
+  list-style-type: none;
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
+}
+
+fa-icon {
+  font-size: 1.5rem;
+}
+
+
+
+.horizontal-menu li  {
+
+  height: 100%;
+  padding-left: 1%;
+  padding-right: 1%;
+  display: inline;
+}
+
+.rightFloat {
+  float: right;
+}
+
+.leftFloatMenu {
+  float: left;
+  display: none !important;
+}
+
+.horizontal-menu ul  {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.horizontal-menu li a{
+  color: white;
+  display: block;
+  height: 100%;
+  line-height: 60px;
+  text-align: center;
+  transition: background-position 0.2s ease 0s;
+  text-decoration: none;
+}
+
+.horizontal-menu li a:hover {
+  color: var(--main-bg-yellow);
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .leftFloatMenu {
+    float: left;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .leftFloatMenu {
+    float: left;
+    display: block;
+  }
+}
+
+

@@ -1,0 +1,21 @@
+<div class="header-low">
+  <nav>
+    <ul class="nav-links">
+      <li *ngFor="let item of menuContext" class="">
+
+        <a href="{{item.link}}">
+          <fa-icon [icon]="faBars" *ngIf="item.name == 'Каталог'"></fa-icon>
+          {{item.name}}
+        </a>
+      </li>
+    </ul>
+    <ul class="nav-links-small">
+      <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+      <!-- #enddocregion mat-menu-trigger-for -->
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+    </ul>
+  </nav>
+</div>

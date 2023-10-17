@@ -1,0 +1,24 @@
+<footer>
+  <div class="container">
+  <div class="columns">
+    <div *ngFor="let column of columns; let i = index" class="col-25 footer-column">
+      <ul>
+        <li *ngFor="let item of column.items; let isFirst = first" [class.title]="isFirst">
+          <a href="#">{{ isFirst ? column.title : item }}</a>
+        </li>
+      </ul>
+    </div>
+    <ng-template #dropdown>
+      <!-- Implement your dropdown here -->
+      <div class="dropdown">
+        <button class="dropbtn">{{ columns[0]?.title }}</button>
+        <div class="dropdown-content">
+          <a *ngFor="let item of columns[0]?.items" href="#">{{ item }}</a>
+        </div>
+      </div>
+    </ng-template>
+
+    <hr>
+  </div>
+  </div>
+</footer>

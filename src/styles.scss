@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+@import "@fontsource/comfortaa/index.css";
+:root {
+  --main-bg-grey: #333333;
+  --main-bg-light-grey: #f5f5f7;
+  --main-text-grey: #717170;
+  --main-bg-yellow: #f3cc6d;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+
+  font-family: "Comfortaa" ;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+button {
+  border: none;
+}
+
+button:focus {
+  border: none;
+  outline: none;
+}
+
+
+
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+@media screen and (min-width: 350px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1200px;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+.container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+  max-width: 1320px;
+  width: 90%;
+}
+}

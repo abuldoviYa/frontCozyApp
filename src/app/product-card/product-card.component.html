@@ -1,0 +1,121 @@
+<div class="container">
+  <div class="product">
+
+    <div class="imagesMenu col-6">
+      <div class="menu">
+        <ul class="menu-list">
+          <div *ngFor="let item of subCategories" [ngClass]="{active: item.title==='фуршетные юбки'}"
+               class="subCategory">
+            <li>
+              {{item.title}}
+            </li>
+          </div>
+
+        </ul>
+      </div>
+      <div class="slider">
+        <div class="images">
+
+          <div class="small-images">
+              <div *ngFor="let image of images" class="img-container">
+                <img class="miniature" src="{{image.link}}" (click)="onChangeImage(image.id)" alt="">
+              </div>
+          </div>
+          <div class="main-image">
+            <img class="largeImage" src="{{currentImage}}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="information col-4">
+
+
+      <h3>Фуршетные юбки</h3>
+      <div class="rating">
+        <fa-icon [icon]="faStar" class="iconStar pl-3"></fa-icon>
+        <p class="pl-5">4.9</p>
+        <span class="pl-7">25 оценок / 11 отзывов</span>
+      </div>
+
+      <div class="material">
+        <p>Ткань: {{this.currentMaterial.title}}</p>
+        <div class="material-menu">
+          <ul class="material-menu-list">
+            <div *ngFor="let item of materials" [ngClass]="{active: item ===currentMaterial} " (click)="onCurrentMaterial(item)"
+                 class="subCategory">
+              <li>
+                {{item.title}}
+              </li>
+            </div>
+
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="textile">
+        <p>Цвет товара: {{this.currentColor.titleRu}}</p>
+        <div class="textiles">
+          <ul class="textiles-list">
+            <div *ngFor="let color of getColors(fullColors)" class="color">
+
+              <div *ngIf="color.title != 'none'"
+                   class="colorContainer border-container"
+                   (click)="onCurrentColor(color)"
+                   [ngClass]="{active: currentColor == color}"
+                   [style.background-image]="'url(' + color.link + ')'">
+
+              </div>
+
+
+              <div *ngIf="color.title == 'none'" class="colorContainer border-container" (click)="onFullColors()">
+                <span>+{{color.number}}</span>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <div class="size">
+        <p>Ткань: {{this.currentSize.title}}</p>
+        <div class="size-menu">
+          <ul class="size-menu-list">
+            <div *ngFor="let item of sizes" [ngClass]="{active: item ===currentSize}" (click)="onCurrentSize(item)"
+                 class="subCategory">
+              <li>
+                {{item.title}}
+              </li>
+            </div>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="type">
+        <p>Ткань: {{this.currentType.title}}</p>
+        <div class="type-menu">
+          <ul class="type-menu-list">
+            <div *ngFor="let item of types" [ngClass]="{active: item === currentType}" (click)="onCurrentType(item)"
+                 class="subCategory">
+              <li>
+                {{item.title}}
+              </li>
+            </div>
+
+          </ul>
+        </div>
+      </div>
+
+
+      <a href="#" class="requestLink">Задать вопрос о товаре</a>
+    </div>
+
+
+    <div class="prices col-2">
+      <app-product-price></app-product-price>
+    </div>
+
+  </div>
+</div>
+

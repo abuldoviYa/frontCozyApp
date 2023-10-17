@@ -1,0 +1,55 @@
+.header-low {
+  background-color: var(--main-bg-grey);
+  border-radius: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; /* step 6 */
+  line-height: 47px;
+  display: flex;
+
+}
+nav li {
+  display: inline-block; /* step 1 */
+  width: auto; /* step 4 */
+  margin-right: -4px; /* step 5 */
+
+}
+nav a {
+  display: block; /* step 2 */
+  text-decoration: none; /* step 3 */
+  line-height: 47px;
+}
+/* common text style */
+nav a {
+  font-family: sans-serif;
+  height: 100%; /* vertically center */
+  color: #fff;
+  font-size: 1.1rem;
+}
+nav a:hover {
+  color: var(--main-bg-yellow);
+  transition: all 0.3s ease
+}
+
+nav a.active {
+  background-color: #eee;
+  color: #444;
+  cursor: default;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+nav{
+  padding: 0 40px;
+}
+
+

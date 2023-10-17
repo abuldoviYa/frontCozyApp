@@ -1,0 +1,36 @@
+.bucket-button {
+  background-color: var(--main-bg-grey);
+  padding: 8px 20px;
+  border-radius: 10px;
+  width: 100%;
+  color: white;
+}
+.price-with-discount {
+  font-family: "Comfortaa", sans-serif;
+  padding: 8px 10px;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  background-color: var(--main-bg-yellow);
+}
+
+.price-with-discount p{
+  padding: 8% 0 0 0 ;
+  position: relative;
+  top: 70%;
+  margin: 0;
+  color: white;
+}
+.price-main {
+  font-family: "Comfortaa", sans-serif;
+  margin: 5px 0 15px 0;
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.price-main span {
+  font-size: 0.9rem;
+  color: lightgray;
+}
+
