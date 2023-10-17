@@ -51,5 +51,35 @@ nav a.active {
 nav{
   padding: 0 40px;
 }
+.nav-links-small {
+     display: none;
+   }
 
+
+
+
+@media screen and (min-width: 350px) {
+  .nav-links-small-wrapper {
+    display: block;
+  }
+
+  .header-low {
+    display: none;
+  }
+
+
+
+}
+
+
+@media screen and (min-width: 1190px) {
+  .nav-links-small-wrapper {
+    display: none;
+  }
+
+  .header-low {
+    display: block;
+  }
+
+}
 

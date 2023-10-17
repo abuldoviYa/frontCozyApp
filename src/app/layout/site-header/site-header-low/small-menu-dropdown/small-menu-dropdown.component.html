@@ -1,0 +1,17 @@
+<div class="small-menu">
+  <button class="menu-button" (click)="onMenu()">Меню</button>
+
+</div>
+
+<div class="overlays" *ngIf="showMenu">
+  <div class="menu-overlay">
+    <ul>
+      <li *ngFor="let item of menuItems"><a href="{{item.link}}">{{item.name}}</a></li>
+    </ul>
+  </div>
+  <div id="overlay"  (click)="onMenu()">
+
+
+  </div>
+</div>
+
