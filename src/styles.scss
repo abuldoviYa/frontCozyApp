@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "@fontsource/comfortaa/index.css";
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
 :root {
   --main-bg-grey: #333333;
   --main-bg-light-grey: #f5f5f7;
@@ -53,4 +54,20 @@ button:focus {
   max-width: 1320px;
   width: 90%;
 }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.my-button {
+  width: 280px;
+}
+
+.mat-menu-panel.my-menu {
+  width: 280px;
+}
+
+.custom-style {
+  background: red;
 }

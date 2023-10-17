@@ -7,7 +7,7 @@ export class ApiServiceService {
 
   constructor() { }
 
-  fullMenu() {
+  getFullMenu() {
     return [
       {name: "Каталог", link: "#"},
       {name: "Столовый текстиль", link: "#"},

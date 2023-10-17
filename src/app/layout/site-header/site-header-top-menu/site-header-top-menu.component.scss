@@ -21,7 +21,7 @@ fa-icon {
 
   height: 100%;
   padding-left: 1%;
-  padding-right: 1%;
+  padding-right: 2%;
   display: inline;
 }
 
@@ -56,6 +56,17 @@ fa-icon {
   cursor: pointer;
 }
 
+@media screen and (min-width: 350px) {
+  .leftFloatMenu {
+    float: left;
+    display: block;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .leftFloatMenu {
     float: left;
@@ -63,11 +74,6 @@ fa-icon {
   }
 }
 
-@media screen and (min-width: 350px) {
-  .leftFloatMenu {
-    float: left;
-    display: block;
-  }
-}
+
 
 

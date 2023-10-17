@@ -17,6 +17,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {NgOptimizedImage} from "@angular/common";
 import { ProductPriceComponent } from './product-card/product-price/product-price.component';
 import {ApiServiceService} from "./api-service.service";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatMenuModule} from "@angular/material/menu";
+import { SmallMenuDropdownComponent } from './layout/site-header/site-header-low/small-menu-dropdown/small-menu-dropdown.component';
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -39,6 +43,10 @@ import {ApiServiceService} from "./api-service.service";
     RouterOutlet,
     NgbModule,
     NgOptimizedImage,
+    BrowserAnimationsModule,
+    MatMenuModule,
+    MatButtonModule,
+    SmallMenuDropdownComponent,
 
 
   ],
